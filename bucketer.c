@@ -14,9 +14,9 @@ struct CountsBySoH countBatteriesByHealth(const int* presentCapacities, int nBat
     for(int i = 0;i<nBatteries;i++)
     {
       SOH = 100*presentCapacities[i]/ratedCapacity;
-      if(SOH>80 && SOH<=100) counts->healthy++;
-      else if(SOH>=63 && SOH<=80) counts->exchange++;
-      else counts->failed++;
+      if(SOH>80 && SOH<=100) counts.healthy++;
+      else if(SOH>=63 && SOH<=80) counts.exchange++;
+      else counts.failed++;
   return counts;
 }
 
