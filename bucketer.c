@@ -17,6 +17,7 @@ struct CountsBySoH countBatteriesByHealth(const int* presentCapacities, int nBat
       if(SOH>80 && SOH<=100) counts.healthy++;
       else if(SOH>=63 && SOH<=80) counts.exchange++;
       else counts.failed++;
+    }
   return counts;
 }
 
